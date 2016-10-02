@@ -17,6 +17,7 @@ global.dbHandel = require('./database/dbHandel');
 global.db = mongoose.connect('mongodb://localhost:27107/school');
 
 
+//拦截地址
 app.get('/',function(req,res){
   res.send('hello world');
 });
