@@ -4,8 +4,8 @@ var routes = require('./routres/index');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-112222
-//中间件
+
+//中间件 test
 app.use(bodyParser.urldeocde({extended:true});
 app.use(express.static(__dirname+'/public');
 app.set('view engine','html');
@@ -19,7 +19,7 @@ global.db = mongoose.connect('mongodb://localhost:27107/school');
 
 //拦截地址
 app.get('/',function(req,res){
-  res.send('hello world');
+  res.send('hello world1');
 });
 
 //路由中间件拦截
