@@ -4,8 +4,8 @@ var routes = require('./routres/index');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-112222
-//中间件
+
+//中间件 test 
 app.use(bodyParser.urldeocde({extended:true});
 app.use(express.static(__dirname+'/public');
 app.set('view engine','html');
