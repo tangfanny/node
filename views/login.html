@@ -4,6 +4,33 @@
 	<title><%=title %></title>
 </head>
 <body>
-hello <%=title%>
+
+<div>
+	<input type="text" id="name"></input>
+	<input type="text" id="pwd"></input>
+	<button id="login">登录</button>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	
+	$('#login').click(function(){
+		var uname = $('#name').val(),
+			upwd = $('#pwd').val();
+		$.ajax({
+			url : '/login',
+			type : 'post',
+			data : {
+				name : uname,
+				pwd : upwd
+			},
+			success:function(data){
+				if(data){
+					console.log('登录成功')
+				}
+			}
+		})
+	})
+</script>
 </body>
 </html>
