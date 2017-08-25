@@ -2,7 +2,10 @@ var express = require('express');
 var app  = express();
 var routes = require('./routres/index');
 var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 
+
+app.use(bodyParser.urldeocde({extended:true});
 app.use(express.static(__dirname+'/public');
 app.set('view engine','html');
 app.engine('html',require('ejs').__express);
