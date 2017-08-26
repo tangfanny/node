@@ -20,6 +20,7 @@ app.get('/',function(req,res){
 });
 
 app.use('login',routes)
+app.use('register',routes);
 
 
 
