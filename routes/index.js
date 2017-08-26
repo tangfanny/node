@@ -13,5 +13,12 @@ router.route('/login').get(function(req,res){
     }
   
 });
+router.route('/register').get(function(req,res){
+	res.render('register',{
+	title:'regitser'
+	})
+}).post(function(req,res){
+	console.log(req.body.name)
+})
 
 module.exports = router;
