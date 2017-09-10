@@ -19,7 +19,7 @@ global.db = mongoose.connect('mongodb://localhost:27107/school');
 
 //拦截地址
 app.get('/',function(req,res){
-  res.send('hello wo111rld1');
+  res.send('hello wo111rld12');
 });
 
 //路由中间件拦截
