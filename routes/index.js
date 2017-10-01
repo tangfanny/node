@@ -14,6 +14,7 @@ router.route('/login').get(function(req,res){
     }
   
 });
+//设置注册路由
 router.route('/register').get(function(req,res){
 	res.render('register',{
 	title:'regitser'
