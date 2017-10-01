@@ -23,4 +23,5 @@ router.route('/register').get(function(req,res){
 	console.log(req.body.name)
 })
 
+//暴露
 module.exports = router;
