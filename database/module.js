@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-
+//设置get和post路由
 router.route('/login').get(function(req,res){
   res.render('login',{
     title : 'login'
