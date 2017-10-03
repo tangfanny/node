@@ -21,6 +21,7 @@ app.get('/',function(req,res){
   res.send('hello world');
 });
 
+//路由中间件拦截
 app.use('login',routes)
 app.use('register',routes);
 
