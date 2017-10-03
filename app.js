@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 
+//中间件
 app.use(bodyParser.urldeocde({extended:true});
 app.use(express.static(__dirname+'/public');
 app.set('view engine','html');
