@@ -12,6 +12,7 @@ app.set('view engine','html');
 app.engine('html',require('ejs').__express);
 app.set('views',__dirname+'/views');
 
+//数据库链接
 global.dbHandel = require('./database/dbHandel');
 global.db = mongoose.connect('mongodb://localhost:27107/school');
 
