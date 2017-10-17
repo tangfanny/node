@@ -27,15 +27,4 @@ app.use('login',routes)
 app.use('register',routes);
 
 
-
-
-
-
-
-
-
-
-
-
-
-app.listen(3030);
+app.listen(3050);
