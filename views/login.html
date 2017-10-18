@@ -15,8 +15,8 @@
 <script type="text/javascript">
 	
 	$('#login').click(function(){
-		var uname = $('#name').val(),
-			upwd = $('#pwd').val();
+		var uname = $('#name').val();
+		var upwd = $('#pwd').val();
 		$.ajax({
 			url : '/login',
 			type : 'post',
